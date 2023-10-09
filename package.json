@@ -1,5 +1,5 @@
 {
-  "name": "@xlts.dev/verdaccio-prometheus-middleware",
+  "name": "@devintent/verdaccio-prometheus-middleware",
   "version": "2.0.2",
   "description": "Verdaccio middleware plugin used to collect prometheus compatible metrics",
   "keywords": [
@@ -11,16 +11,16 @@
   ],
   "author": {
     "name": "Ed Clement",
-    "email": "ed@xlts.dev"
+    "email": "ed@devintent.com"
   },
   "license": "MIT",
-  "homepage": "https://xlts.dev",
+  "homepage": "https://devintent.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xlts-dev/verdaccio-prometheus-middleware"
+    "url": "https://github.com/devintent/verdaccio-prometheus-middleware"
   },
   "bugs": {
-    "url": "https://github.com/xlts-dev/verdaccio-prometheus-middleware/issues"
+    "url": "https://github.com/devintent/verdaccio-prometheus-middleware/issues"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

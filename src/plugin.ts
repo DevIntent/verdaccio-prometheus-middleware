@@ -54,7 +54,9 @@ export default class VerdaccioMiddlewarePlugin implements IPluginMiddleware<Metr
    */
   public register_middlewares(
     app: Application,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     auth: IBasicAuth<MetricsConfig>,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     storage: IStorageManager<MetricsConfig>,
   ): void {
     const { defaultMetrics, requestMetrics, packageMetrics } = this.metricsConfig;

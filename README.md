@@ -76,7 +76,7 @@ FROM node:lts-alpine as builder
 # Install the metrics middleware plugin. Replace `x.y.z` with the plugin version.
 RUN mkdir -p /verdaccio/plugins \
     && cd /verdaccio/plugins \
-    && npm install --global-style --no-bin-links --omit=optional @xlts.dev/verdaccio-prometheus-middleware@x.y.z
+    && npm install --global-style --no-bin-links --omit=optional @devintent/verdaccio-prometheus-middleware@x.y.z
 
 # The final built image will be based on the standard Verdaccio docker image.
 FROM verdaccio/verdaccio:5
@@ -85,7 +85,7 @@ FROM verdaccio/verdaccio:5
 # The `$VERDACCIO_USER_UID` env variable is defined in the base `verdaccio/verdaccio` image.
 # Refer to: https://github.com/verdaccio/verdaccio/blob/v5.13.3/Dockerfile#L32
 COPY --chown=$VERDACCIO_USER_UID:root --from=builder \
-  /verdaccio/plugins/node_modules/@xlts.dev/verdaccio-prometheus-middleware \
+  /verdaccio/plugins/node_modules/@devintent/verdaccio-prometheus-middleware \
   /verdaccio/plugins/verdaccio-metrics
 ```
 

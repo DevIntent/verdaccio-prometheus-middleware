@@ -89,12 +89,8 @@ describe('Default Metrics', () => {
         'process_cpu_seconds_total',
         'process_cpu_system_seconds_total',
         'process_cpu_user_seconds_total',
-        'process_heap_bytes',
-        'process_max_fds',
-        'process_open_fds',
         'process_resident_memory_bytes',
         'process_start_time_seconds',
-        'process_virtual_memory_bytes',
       ]);
     });
   });

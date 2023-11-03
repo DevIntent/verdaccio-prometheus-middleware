@@ -1,7 +1,7 @@
 MIT License
 
-Copyright (c) 2022 XLTS.dev
-Copyright (c) 2023 DevIntent
+- Copyright (c) 2022 XLTS.dev
+- Copyright (c) 2023 DevIntent
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

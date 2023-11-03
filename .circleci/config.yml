@@ -10,11 +10,10 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run:
-          command: npm run test
+      - run: npm run test
       # https://circleci.com/docs/2.0/collect-test-data
       - store_test_results:
-          path: ./coverage/
+          path: ./coverage/jest
 
 workflows:
   test:
